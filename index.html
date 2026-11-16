@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Venkata Lakshmipathi Varma Konduri</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Senior Software Engineer: backend ML, LLM serving, distributed systems, IoT and full stack in production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #161616;
+  --surface: #1e1e1e;
+  --surface-2: #262626;
+  --ink: #ececec;
+  --muted: #a3a3a3;
+  --line: #2f2f2f;
+  --accent: #f5b800;
+  --on-accent: #161616;
+  --overlay: linear-gradient(90deg, rgba(22,22,22,.96) 0%, rgba(22,22,22,.78) 45%, rgba(22,22,22,.15) 100%);
+  --sans: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f5f1; --surface: #ffffff; --surface-2: #f0eee8; --ink: #1b1b1b; --muted: #5c5c5c;
+    --line: #e2dfd6; --accent: #a87a00; --on-accent: #ffffff;
+    --overlay: linear-gradient(90deg, rgba(246,245,241,.97) 0%, rgba(246,245,241,.82) 45%, rgba(246,245,241,.1) 100%);
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f6f5f1; --surface: #ffffff; --surface-2: #f0eee8; --ink: #1b1b1b; --muted: #5c5c5c;
+  --line: #e2dfd6; --accent: #a87a00; --on-accent: #ffffff;
+  --overlay: linear-gradient(90deg, rgba(246,245,241,.97) 0%, rgba(246,245,241,.82) 45%, rgba(246,245,241,.1) 100%);
+  color-scheme: light;
+}
+:root[data-theme="dark"] { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(1040px, 100% - 32px); margin-inline: auto; }
+
+.nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.brand { font-weight: 700; font-size: clamp(.95rem, 2.2vw, 1.3rem); color: var(--accent); letter-spacing: -.01em; }
+.brand span { color: var(--ink); }
+.links { display: flex; gap: clamp(12px, 2.4vw, 28px); font-family: var(--mono); font-size: .875rem; }
+.links a:hover { color: var(--accent); }
+.theme { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 4px 8px; font-family: var(--mono); font-size: .75rem; cursor: pointer; }
+@media (max-width: 720px) { .links { display: none; } }
+
+.hero { position: relative; min-height: calc(100vh - 64px); min-height: calc(100svh - 64px); display: flex; align-items: center; overflow: hidden; }
+.hero .photo { position: absolute; inset: 0 0 0 auto; width: min(58%, 720px); background: url(photo.jpg) center 20% / cover no-repeat; }
+.hero::before { content: ""; position: absolute; inset: 0; background: var(--overlay); z-index: 1; }
+.hero .wrap { position: relative; z-index: 2; padding-block: 64px; }
+.kicker { font-family: var(--mono); color: var(--accent); font-size: .9rem; margin: 0 0 14px; }
+.hero h1 { margin: 0; font-size: clamp(2.4rem, 7vw, 4.6rem); line-height: 1.05; font-weight: 800; letter-spacing: -.02em; max-width: 11ch; }
+.hero .role { margin: 18px 0 28px; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.3rem); font-weight: 300; max-width: 36ch; }
+.icons { display: flex; gap: 18px; }
+.icons a { color: var(--muted); display: inline-flex; }
+.icons a:hover { color: var(--accent); }
+.icons svg { width: 22px; height: 22px; }
+.stats { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 40px; font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+.stats b { display: block; font-family: var(--sans); font-size: 1.6rem; color: var(--ink); font-weight: 700; }
+@media (max-width: 720px) {
+  .hero .photo { width: 100%; opacity: .35; }
+  .hero::before { background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 55%, transparent), var(--bg)); }
+}
+
+section { padding-block: clamp(64px, 10vw, 110px); }
+.h2 { display: flex; align-items: center; gap: 20px; justify-content: center; margin: 0 0 clamp(36px, 6vw, 60px); font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 700; letter-spacing: -.01em; }
+.h2::after { content: ""; width: min(200px, 22vw); height: 1px; background: var(--line); }
+.about p { max-width: 760px; margin: 0 auto; color: var(--muted); font-size: 1.06rem; text-align: center; }
+.about p strong { color: var(--ink); font-weight: 600; }
+
+.timeline { position: relative; }
+.timeline::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line); }
+.item { position: relative; width: calc(50% - 40px); margin-bottom: 48px; }
+.item:nth-child(odd) { margin-right: auto; }
+.item:nth-child(even) { margin-left: auto; }
+.item::after { content: ""; position: absolute; top: 28px; width: 14px; height: 14px; border: 2px solid var(--accent); border-radius: 50%; background: var(--bg); }
+.item:nth-child(odd)::after { right: -48px; }
+.item:nth-child(even)::after { left: -48px; }
+.card { background: var(--surface); border-radius: 6px; padding: 24px; box-shadow: 0 10px 28px rgba(0,0,0,.22); transition: transform .2s ease; }
+.card:hover { transform: translateY(-4px); }
+.badge { width: 42px; height: 42px; border-radius: 6px; display: grid; place-items: center; background: var(--surface-2); color: var(--accent); font-family: var(--mono); font-weight: 500; margin-bottom: 16px; }
+.card h3 { margin: 0; font-size: 1.2rem; font-weight: 600; line-height: 1.35; }
+.where { font-family: var(--mono); color: var(--accent); font-size: .875rem; margin-top: 4px; }
+.when { font-family: var(--mono); color: var(--muted); font-size: .78rem; margin-top: 2px; }
+.card ul { list-style: none; padding: 0; margin: 16px 0 0; }
+.card li { position: relative; padding-left: 18px; color: var(--muted); font-size: .94rem; margin-bottom: 8px; }
+.card li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: .8em; top: .2em; }
+@media (max-width: 760px) {
+  .timeline::before { left: 7px; }
+  .item, .item:nth-child(odd), .item:nth-child(even) { width: auto; margin-left: 32px; margin-right: 0; }
+  .item:nth-child(odd)::after, .item:nth-child(even)::after { left: -32px; right: auto; }
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.grid h3 { margin: 0 0 6px; font-size: 1.1rem; font-weight: 600; }
+.grid h3::after { content: ""; display: block; width: 36px; height: 2px; background: var(--accent); margin-top: 8px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.tag { font-family: var(--mono); font-size: .78rem; color: var(--muted); background: var(--surface-2); padding: 6px 11px; border-radius: 4px; }
+.proj .tag { border-radius: 999px; padding: 4px 11px; font-size: .74rem; }
+.proj p { color: var(--muted); font-size: .94rem; margin: 12px 0 0; }
+
+.contact { text-align: center; }
+.contact p { max-width: 620px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem; }
+.btn { display: inline-block; font-family: var(--mono); color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 16px 28px; transition: background .2s ease, color .2s ease; }
+.btn:hover { background: var(--accent); color: var(--on-accent); }
+footer { padding: 24px 0 48px; text-align: center; }
+footer .icons { justify-content: center; margin-bottom: 12px; }
+footer small { font-family: var(--mono); color: var(--muted); font-size: .75rem; }
+
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } .card:hover { transform: none; } html { scroll-behavior: auto; } }
+.lead { text-align: center; color: var(--ink); margin: -24px auto 48px; max-width: 640px; }
+.lead span { font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Building products that ship<span>.</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+    <button class="theme" id="theme" type="button" aria-label="Toggle colour theme">theme</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="photo" role="img" aria-label="Photo of Venkata Lakshmipathi Varma Konduri"></div>
+  <div class="wrap">
+    <p class="kicker">hi, i'm</p>
+    <h1>Venkata Lakshmipathi Varma Konduri</h1>
+    <p class="role">Senior Software Engineer · Backend ML, Distributed Systems, IoT and Full Stack</p>
+    <div class="icons">
+      <a href="mailto:kvlpvarma7@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/varmakvl" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.8h2.6zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.7h-2.6v-4.1c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.2h-2.6V9.8h2.5V11a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.2 1.8 3.2 4.1z"/></svg></a>
+      <a href="https://github.com/varmakvl" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+    </div>
+    <div class="stats">
+      <div><b>5+ yrs</b>in production</div>
+      <div><b>300+</b>edge devices, 5 countries</div>
+      <div><b>9M+</b>records processed</div>
+      <div><b>4x</b>on device inference</div>
+      <div><b>&lt;400 ms</b>edge voice latency</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="about reveal" id="about">
+    <div class="wrap">
+      <h2 class="h2">About Me</h2>
+      <p>Senior engineer with <strong>5+ years building and shipping production systems</strong> across machine learning, distributed cloud, IoT and full stack. I'm the technical owner of a <strong>face recognition access control platform on 300+ edge devices across 5 countries</strong>, backed by an Azure pipeline that processes 9M+ records. I take requirements directly from customers and deliver end to end: architecture, implementation, deployment and support. I work the full inference path, from model conversion and validation to <strong>serving language, speech and vision models</strong>, and the data pipelines and releases around them.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="h2">Work Experience</h2>
+      <p class="lead reveal"><strong>Senior Software Engineer</strong> at <strong>Apra Labs, Bengaluru</strong> · Dec 2020 to Present<br><span>Promoted from Engineering Intern to Software Engineer to Senior</span></p>
+      <div class="timeline">
+        <article class="item reveal"><div class="card">
+          <div class="badge">PR</div>
+          <h3>Person Reader: Face Recognition Access Control Platform</h3>
+          <div class="where">Apra Labs · Bengaluru</div>
+          <div class="when">Electron · React · TypeScript · Node.js · C++</div>
+          <ul>
+            <li>Owned the product end to end across 300+ units, 5 countries and 3 hardware variants, from feature design and architecture through release and customer support.</li>
+            <li>Built the application layer in Electron with React, Redux Saga and TypeScript over Node.js services and a C++ engine: enrollment, configuration, monitoring and diagnostics for site administrators.</li>
+            <li>Added multi credential access with physical cards, QR codes and mobile Bluetooth.</li>
+            <li>Integrated Destination Dispatch with Otis and TKE elevator systems, resolving access rights server side and requesting the right car automatically.</li>
+            <li>Delivered accessibility features for blind and visually impaired users: SIP and WebRTC intercom, voice access and text to speech workflows.</li>
+            <li>Improved remote supportability with diagnostic tooling, self healing watchdogs and secure remote access.</li>
+            <li>Spent 2+ months on site with customers in Boston and ran live sessions in New York, turning field findings into shipped improvements.</li>
+          </ul>
+        </div></article>
+        <article class="item reveal"><div class="card">
+          <div class="badge">AI</div>
+          <h3>Edge AI, Inference and Computer Vision</h3>
+          <div class="where">Apra Labs · Bengaluru</div>
+          <div class="when">NVIDIA Jetson · TensorRT · CUDA · C++</div>
+          <ul>
+            <li>Owned the face recognition path in a C++ pipeline on NVIDIA Jetson: SSD style detector, Kazemi landmarks, EfficientNetV2 B0 backbone, template quality scoring and depth based presentation attack detection.</li>
+            <li>Sped up on device inference up to 4x by rebuilding around TensorRT and CUDA, cutting redundant host to device copies and moving preprocessing off the CPU. Sustains 15 FPS in the field.</li>
+            <li>Validated FP16 quantization by measuring similarity score shift on a fixed identity set: drift of about 0.03 against a 0.55 threshold, so no match decision changed.</li>
+            <li>Cut false enrollments by roughly 23% with a template quality and maturity model that scores recognition utility at capture time.</li>
+            <li>Built depth based presentation attack detection on Intel RealSense, an Auto ID pipeline and cross device template sharing so an identity enrolls once per building.</li>
+            <li>Led the Jetson Nano to Orin migration (JetPack 4 to 6, Ubuntu 18 to 20): 100 new Orin units run alongside 200 Nano units on shared template data.</li>
+          </ul>
+        </div></article>
+        <article class="item reveal"><div class="card">
+          <div class="badge">LLM</div>
+          <h3>Language Models, Speech, Video and Training Data</h3>
+          <div class="where">Apra Labs · Bengaluru</div>
+          <div class="when">Qwen · vLLM · Triton · Whisper · RAG</div>
+          <ul>
+            <li>Deployed Qwen with vLLM behind Triton Inference Server on an 80GB A100 for a RAG customer support chatbot on ChromaDB. It replaced MindTouch and saves roughly $20,000 per year.</li>
+            <li>Ran the Triton model repository as a versioned registry for Whisper and Qwen, with a health monitor that verifies each model before it takes traffic.</li>
+            <li>Evaluated chatbot answers with a written rubric and fixed question set, plus a GPT4 judge pass scoring groundedness in retrieved passages.</li>
+            <li>Cut voice command latency by roughly 60% (about 1 s to under 400 ms) by moving Whisper to WhisperTRT on each device, with a function calling layer for fully on device commands.</li>
+            <li>Built video search and summarization combining object tracking, segmentation and agentic retrieval.</li>
+            <li>Removed manual annotation with an auto labeling pipeline (GPT vision, Grounded SAM, Stable Diffusion) for YOLOv8 fine tuning.</li>
+          </ul>
+        </div></article>
+        <article class="item reveal"><div class="card">
+          <div class="badge">IoT</div>
+          <h3>Cloud, IoT and Distributed Systems</h3>
+          <div class="where">Apra Labs · Bengaluru</div>
+          <div class="when">Azure · IoT Hub · MQTT · .NET Core · Node.js</div>
+          <ul>
+            <li>Scaled a cloud processing pipeline to 9M+ records across 300+ devices, from the original VM architecture to containerized Azure Durable Functions with fan out and fan in.</li>
+            <li>Made every pipeline activity idempotent so retries in at least once messaging could not duplicate or corrupt records.</li>
+            <li>Built a command sweep function that sends commands down to controllers that were offline and missed them, bringing 40+ controllers back in sync and cutting related downtime ~60%.</li>
+            <li>Built device connectivity on Azure IoT Hub and MQTT, with local and cloud database replication that reconciles on reconnect.</li>
+            <li>Developed C# and .NET Core services with Entity Framework Core over Azure SQL and SQL Server, plus Cosmos DB, MongoDB and ChromaDB.</li>
+            <li>Built an elevator sensor telemetry platform with Node.js and TypeScript services and a Cosmos DB pipeline that fuses barometric, gyroscope, temperature and light data.</li>
+          </ul>
+        </div></article>
+        <article class="item reveal"><div class="card">
+          <div class="badge">↑</div>
+          <h3>Release, Reliability and Production Engineering</h3>
+          <div class="where">Apra Labs · Bengaluru</div>
+          <div class="when">Azure DevOps · ARM64 Docker · CI/CD</div>
+          <ul>
+            <li>Owned delivery from client requirements and sprint planning through batched deployment, staged rollout and rollback aware installers.</li>
+            <li>Primary responder for global production incidents, debugging across front end, services, messaging, database and infrastructure.</li>
+            <li>Diagnosed a site specific memory leak in the QR decoder that blocked users at turnstiles; reproduced it from captured production input and fixed it.</li>
+            <li>Mentored 3 engineers to independent ownership of production components.</li>
+          </ul>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="h2">Technical Skills</h2>
+      <div class="grid">
+        <div class="card reveal"><h3>AI and Inference</h3><div class="tags">
+          <span class="tag">Triton Inference Server</span><span class="tag">vLLM</span><span class="tag">TensorRT</span><span class="tag">ONNX Runtime</span><span class="tag">CUDA</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">Whisper / WhisperTRT</span><span class="tag">Qwen</span><span class="tag">YOLOv8</span><span class="tag">Grounded SAM</span><span class="tag">Stable Diffusion</span><span class="tag">FP16 quantization</span><span class="tag">Dynamic batching</span>
+        </div></div>
+        <div class="card reveal"><h3>Language Models</h3><div class="tags">
+          <span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Vector search</span><span class="tag">Function calling</span><span class="tag">FastMCP</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LLM as judge</span><span class="tag">Rubric evaluation</span><span class="tag">Agentic pipelines</span>
+        </div></div>
+        <div class="card reveal"><h3>Backend</h3><div class="tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">C++</span><span class="tag">C# / .NET Core</span><span class="tag">Entity Framework Core</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">REST</span><span class="tag">gRPC</span><span class="tag">Unit &amp; integration testing</span><span class="tag">Bash</span>
+        </div></div>
+        <div class="card reveal"><h3>Cloud and Data</h3><div class="tags">
+          <span class="tag">Azure Durable Functions</span><span class="tag">IoT Hub</span><span class="tag">Service Bus</span><span class="tag">Blob Storage</span><span class="tag">App Service</span><span class="tag">MQTT</span><span class="tag">Azure SQL / SQL Server</span><span class="tag">Cosmos DB</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Stored procedures</span>
+        </div></div>
+        <div class="card reveal"><h3>Front End</h3><div class="tags">
+          <span class="tag">React</span><span class="tag">Redux Saga</span><span class="tag">Electron</span><span class="tag">TypeScript</span><span class="tag">HTML &amp; CSS</span><span class="tag">WebRTC</span>
+        </div></div>
+        <div class="card reveal"><h3>Edge and Delivery</h3><div class="tags">
+          <span class="tag">Jetson Nano / Orin</span><span class="tag">JetPack &amp; L4T</span><span class="tag">Embedded Linux</span><span class="tag">Intel RealSense</span><span class="tag">Docker &amp; Buildx</span><span class="tag">Container registries</span><span class="tag">Azure DevOps</span><span class="tag">CI/CD</span><span class="tag">CMake</span><span class="tag">Git</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="h2">Key Projects</h2>
+      <div class="grid proj">
+        <div class="card reveal"><h3>RAG Support Chatbot</h3>
+          <p>Qwen served with vLLM behind Triton on an 80GB A100, retrieving from a ChromaDB store, evaluated with a rubric and a GPT4 judge. Replaced MindTouch and saves about $20,000 a year.</p>
+          <div class="tags"><span class="tag">Qwen</span><span class="tag">vLLM</span><span class="tag">Triton</span><span class="tag">ChromaDB</span></div>
+        </div>
+        <div class="card reveal"><h3>On Device Voice Commands</h3>
+          <p>Whisper moved from a central Triton deployment to WhisperTRT on each device, with a function calling layer. Latency dropped about 60% to under 400 ms, and voice works through outages.</p>
+          <div class="tags"><span class="tag">WhisperTRT</span><span class="tag">Function calling</span><span class="tag">Jetson</span></div>
+        </div>
+        <div class="card reveal"><h3>Edge Face Recognition</h3>
+          <p>A C++ recognition pipeline on Jetson rebuilt around TensorRT and CUDA for up to 4x faster inference, FP16 validated, with depth based anti spoofing on Intel RealSense.</p>
+          <div class="tags"><span class="tag">TensorRT</span><span class="tag">CUDA</span><span class="tag">C++</span><span class="tag">RealSense</span></div>
+        </div>
+        <div class="card reveal"><h3>Video Search and Summarization</h3>
+          <p>Object tracking, segmentation and agentic retrieval turn footage into searchable context, so a model can answer questions about a video or summarize a period.</p>
+          <div class="tags"><span class="tag">Agentic retrieval</span><span class="tag">Tracking</span><span class="tag">LLM</span></div>
+        </div>
+        <div class="card reveal"><h3>Azure IoT Data Pipeline</h3>
+          <p>9M+ records from 300+ devices on containerized Azure Durable Functions with fan out and fan in, idempotent activities and IoT Hub / MQTT replication that survives outages.</p>
+          <div class="tags"><span class="tag">Durable Functions</span><span class="tag">IoT Hub</span><span class="tag">MQTT</span></div>
+        </div>
+        <div class="card reveal"><h3>Offline Controller Command Sweep</h3>
+          <p>A sweep function that finds controllers that were offline when commands went out and sends the missed commands down once they reconnect. It brought 40+ controllers back in sync and cut related downtime ~60%.</p>
+          <div class="tags"><span class="tag">IoT</span><span class="tag">Fleet reliability</span><span class="tag">Azure</span></div>
+        </div>
+        <div class="card reveal"><h3>Auto Labeling Pipeline</h3>
+          <p>A GPT vision model, Grounded SAM and Stable Diffusion generate and label training data for YOLOv8 fine tuning, removing manual annotation from detector training.</p>
+          <div class="tags"><span class="tag">Grounded SAM</span><span class="tag">Stable Diffusion</span><span class="tag">YOLOv8</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2 class="h2">Education &amp; Recognition</h2>
+      <div class="grid">
+        <div class="card reveal"><h3>B.Tech, Electronics and Communication</h3>
+          <div class="where">IIIT Naya Raipur</div>
+          <div class="when">2017 to 2021 · CGPA 9.23 / 10</div>
+          <ul><li>Head of R&amp;D at COMET, IIIT Naya Raipur.</li><li>Winner of Dizhard / Technovate 2020.</li></ul>
+        </div>
+        <div class="card reveal"><h3>Open Source</h3>
+          <div class="where">ApraPipes</div>
+          <div class="when">C++ media and vision framework</div>
+          <ul><li>Contributed QR, RealSense and camera modules, building across Linux, Windows, ARM and Jetson targets.</li></ul>
+        </div>
+        <div class="card reveal"><h3>Recognition</h3>
+          <div class="where">Apra Labs</div>
+          <div class="when">Awards</div>
+          <ul><li>Customer Champion award.</li><li>Cross Team Collaboration award.</li><li>Nominated for the Leadership Team Development Program.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact reveal" id="contact">
+    <div class="wrap">
+      <h2 class="h2">Get In Touch</h2>
+      <p>I'm open to senior roles in backend ML, LLM and agentic systems, IoT and full stack engineering, remote or in Bengaluru. If you're building something that has to work in the real world, I'd love to talk.</p>
+      <a class="btn" href="mailto:kvlpvarma7@gmail.com">Say Hello</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="icons">
+    <a href="https://www.linkedin.com/in/varmakvl" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.8h2.6zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.7h-2.6v-4.1c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.2h-2.6V9.8h2.5V11a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.2 1.8 3.2 4.1z"/></svg></a>
+    <a href="https://github.com/varmakvl" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+  </div>
+  <small>Designed &amp; built by Venkata Lakshmipathi Varma Konduri</small>
+</footer>
+
+<script>
+(() => {
+  const root = document.documentElement, btn = document.getElementById('theme');
+  let saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
+  if (saved) root.dataset.theme = saved;
+  btn.addEventListener('click', () => {
+    const cur = root.dataset.theme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    root.dataset.theme = cur === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  els.forEach(e => io.observe(e));
+})();
+</script>
+</body>
+</html>
